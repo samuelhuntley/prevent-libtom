@@ -1,0 +1,355 @@
+rm -rf /tmp/cov-ubuntu/standalone-test-AqpRdr
+/home/ubuntu/prevent/objs/linux/root/test-bin/run-testsuite \
+	  --prevent-source /home/ubuntu/prevent  --no-swift-tests --allow-recursion \
+	--log test_log.linux.xml \
+	-c /home/ubuntu/prevent/objs/linux/root/gcc-config/coverity_config.xml \
+	--test-dir /tmp/cov-ubuntu/standalone-test-AqpRdr \
+	--quiet \
+	-m 10 \
+	.
+applied Swift filter; new test count = 1, number of tests filtered out = 0
+FAILED ( 3.0 secs): analysis/prevent-models/models/c/libtomcrypt/test-models
+Running 1 C/C++ checker test for: 
+ANALYSIS_OPTS=["-en"; "HARDCODED_CREDENTIALS"];
+USE_DEFAULTS=true;
+Entering directory `/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models'
+Test checker: in analysis/prevent-models/models/c/libtomcrypt/test-models failed:
+EMIT_VARIANT: 
+Analysis result has extra error events for pwd analysis/prevent-models/models/c/libtomcrypt/test-models: 
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:75: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:78: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "rijndael_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:87: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:90: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "safer_sk64_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:101: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:104: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "safer_sk128_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:116: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:119: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "twofish_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:130: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:133: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "anubis_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:144: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:147: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "blowfish_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:159: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:162: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "camellia_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:173: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:176: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "cast5_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:188: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:191: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "des_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:203: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:206: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "des3_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:217: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:220: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "idea_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:231: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:234: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "kasumi_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:246: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:249: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "khazad_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:262: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:265: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "kseed_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:277: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:280: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "multi2_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:292: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:295: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "noekeon_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:307: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:310: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "rc2_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:322: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:325: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "rc5_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:337: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:340: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "rc6_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:352: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:355: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "serpent_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:367: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:370: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "skipjack_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:383: Extra event var_decl
+Declaring variable "skey1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:386: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "skey1" when calling "xtea_setup".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:400: Extra event var_decl
+Declaring variable "ctr1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:403: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "ctr1" when calling "ctr_start".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:416: Extra event var_decl
+Declaring variable "ctr1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:419: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "ctr1" when calling "cbc_start".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:432: Extra event var_decl
+Declaring variable "ctr1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:435: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "ctr1" when calling "cfb_start".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:448: Extra event var_decl
+Declaring variable "ctr1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:451: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "ctr1" when calling "ofb_start".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:463: Extra event var_decl
+Declaring variable "ctr1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:466: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "ctr1" when calling "ecb_start".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:523: Extra event var_decl
+Declaring variable "lrw1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:530: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "lrw1" when calling "f8_start".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:546: Extra event var_decl
+Declaring variable "eax1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:553: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "eax1" when calling "eax_init".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:566: Extra event var_decl
+Declaring variable "eax1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:571: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "eax1" when calling "ocb_init".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:584: Extra event var_decl
+Declaring variable "eax1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:588: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "eax1" when calling "gcm_init".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:601: Extra event var_decl
+Declaring variable "eax1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:605: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "eax1" when calling "ccm_init".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:718: Extra event var_decl
+Declaring variable "out1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:725: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "out1" when calling "hmac_memory".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:738: Extra event var_decl
+Declaring variable "out1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:744: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "out1" when calling "hmac_file".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:755: Extra event var_decl
+Declaring variable "out1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:762: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "out1" when calling "omac_memory".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:774: Extra event var_decl
+Declaring variable "out1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:780: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "out1" when calling "omac_file".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:791: Extra event var_decl
+Declaring variable "out1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:798: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "out1" when calling "pmac_memory".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:810: Extra event var_decl
+Declaring variable "out1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:816: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "out1" when calling "pmac_file".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:828: Extra event var_decl
+Declaring variable "out1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:835: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "out1" when calling "xcbc_memory".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:847: Extra event var_decl
+Declaring variable "out1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:853: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "out1" when calling "xcbc_file".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:864: Extra event var_decl
+Declaring variable "out1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:871: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "out1" when calling "f9_memory".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:883: Extra event var_decl
+Declaring variable "out1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:889: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "out1" when calling "f9_file".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:917: Extra event var_decl
+Declaring variable "ct1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:927: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "ct1" when calling "eax_encrypt_authenticate_memory".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:957: Extra event var_decl
+Declaring variable "pt1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:967: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "pt1" when calling "eax_decrypt_verify_memory".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:990: Extra event var_decl
+Declaring variable "ct1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:998: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "ct1" when calling "ocb_encrypt_authenticate_memory".
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:1024: Extra event var_decl
+Declaring variable "pt1" without initializer.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:1032: Extra event uninit_use_in_call (UNINIT main event)
+Using uninitialized value "pt1" when calling "ocb_decrypt_verify_memory".
+Analysis result has extra tags for pwd analysis/prevent-models/models/c/libtomcrypt/test-models: 
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:133: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:133: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:162: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:162: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:435: Extra "extra:ctr1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:435: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:998: Extra "extra:ct1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:998: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:340: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:340: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:798: Extra "extra:out1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:798: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:310: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:310: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:780: Extra "extra:out1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:780: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:451: Extra "extra:ctr1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:451: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:1032: Extra "extra:pt1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:1032: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:571: Extra "extra:eax1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:571: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:295: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:295: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:280: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:280: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:249: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:249: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:220: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:220: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:725: Extra "extra:out1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:725: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:744: Extra "extra:out1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:744: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:466: Extra "extra:ctr1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:466: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:889: Extra "extra:out1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:889: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:553: Extra "extra:eax1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:553: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:927: Extra "extra:ct1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:927: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:967: Extra "extra:pt1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:967: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:191: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:191: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:605: Extra "extra:eax1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:605: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:403: Extra "extra:ctr1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:403: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:147: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:147: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:176: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:176: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:419: Extra "extra:ctr1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:419: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:206: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:206: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:871: Extra "extra:out1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:871: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:588: Extra "extra:eax1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:588: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:234: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:234: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:265: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:265: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:762: Extra "extra:out1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:762: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:816: Extra "extra:out1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:816: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:78: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:78: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:325: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:325: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:104: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:104: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:90: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:90: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:355: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:355: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:370: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:370: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:119: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:119: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:835: Extra "extra:out1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:835: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:853: Extra "extra:out1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:853: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:386: Extra "extra:skey1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:386: Extra "subcategory:pointer_deref_read"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:530: Extra "extra:lrw1"
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:530: Extra "subcategory:pointer_deref_read"
+Unsatisfied defect annotations for pwd analysis/prevent-models/models/c/libtomcrypt/test-models: 
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:92: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:106: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:121: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:135: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:149: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:164: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:178: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:193: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:208: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:222: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:236: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:251: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:267: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:282: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:297: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:312: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:327: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:342: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:357: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:372: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:388: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#skey1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:405: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#ctr1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:421: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#ctr1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:437: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#ctr1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:453: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#ctr1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:468: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#ctr1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:484: //#defect#HARDCODED_CREDENTIALS matches a UNINIT#lrw1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:490: //#defect#HARDCODED_CREDENTIALS does not match a defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:505: //#defect#HARDCODED_CREDENTIALS matches a UNINIT#lrw1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:511: //#defect#HARDCODED_CREDENTIALS does not match a defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:528: //#defect#HARDCODED_CREDENTIALS matches a UNINIT#lrw1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:532: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#lrw1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:534: //#defect#HARDCODED_CREDENTIALS matches a UNINIT#lrw1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:555: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#eax1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:573: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#eax1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:590: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#eax1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:607: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#eax1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:727: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#out1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:746: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#out1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:764: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#out1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:782: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#out1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:800: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#out1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:818: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#out1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:837: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#out1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:855: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#out1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:873: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#out1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:891: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#out1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:929: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#ct1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:969: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#pt1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:1000: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#ct1#pointer_deref_read defect.
+/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/test-libtomcrypt_crypto_api.c:1034: //#nodefect#HARDCODED_CREDENTIALS matches a UNINIT#pt1#pointer_deref_read defect.
+
+Leaving directory `/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models'
+Failed 1 time.
+Passed 0 times.
+Duration of testsuite run: 00:00:03
+../../../../test.mk:18: recipe for target 'testsuite' failed
+make: *** [testsuite] Error 1
+
