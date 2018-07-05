@@ -1,0 +1,384 @@
+cmdline: command line: /home/ubuntu/prevent/objs/linux/root/bin/cov-analyze --dir /home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/dir/dir --disable-deduplication --disable-fb --sanity-checks --xx-reject-unexpected-minified-js --ticker-mode=none --allow-unsupported-checkers --no-incremental --export-summaries false --skip-metrics -en HARDCODED_CREDENTIALS 
+cmdline: parsed cmdline: [
+cmdline:   { name: "dir", args: [ "/home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/dir/dir" ] },
+cmdline:   { name: "disable-deduplication" },
+cmdline:   { name: "disable-fb" },
+cmdline:   { name: "sanity-checks" },
+cmdline:   { name: "xx-reject-unexpected-minified-js" },
+cmdline:   { name: "ticker-mode", args: [ "none" ] },
+cmdline:   { name: "allow-unsupported-checkers" },
+cmdline:   { name: "no-incremental" },
+cmdline:   { name: "export-summaries", args: [ "false" ] },
+cmdline:   { name: "skip-metrics" },
+cmdline:   { name: "enable", args: [ "HARDCODED_CREDENTIALS" ] },
+cmdline:   { name: "config", args: [ "/tmp/cov-ubuntu/1cb243595f504767cb463a5f5ac22052/cov-configure/coverity_config.xml" ] },
+cmdline: ]
+startup: am_pid=24630
+startup: detected platform: Linux 4.13.0-45-generic i686
+startup: target platform: linux
+startup: Detected 1 logical cpus
+startup: Detected 1 cpu cores
+startup: host name: ubuntu
+startup: user name: ubuntu
+startup: Analysis version: 2018.12 (1cfd81c16a p-pacific-push-33663)
+startup: temp directory: /tmp/cov-ubuntu/833a86a31770caea523ac762c04a0d0b
+startup: generated config dir: /tmp/cov-ubuntu/1cb243595f504767cb463a5f5ac22052/cov-configure/coverity_config.xml
+startup: enable_constraint_fpp=0
+startup: current time: 2018-Jul-05 09:35:39
+startup: Detected amount of memory: 2059812kb
+startup: Limiting memory to 1853830kb
+wlink: Identifying web applications
+wlink: Linking web-app archive bytecode
+emitdb: callgraph.cpp:2920 11111111
+emitdb: callgraph.cpp:2950 11000011
+emitdb: callgraph.cpp:2970 11000011
+directives: ===== User directives:
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+rta: Not running RTA because it doesn't apply to current languages
+emitdb: callgraph.cpp:2980 11000000
+dyncg: N/A or no data
+directives: Optimizing dataflow configuration
+general: Starting analysis
+dm-access-lib: AM listening for DM at 127.0.0.1:34829
+dm-access-lib: AM starting DM with command line: /home/ubuntu/prevent/objs/linux/root/bin/cov-internal-dm --AM-port 34829 --log-file /home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/dir/dir/output/distributor.log -j 1 --AW-timeout 600 /home/ubuntu/prevent/objs/linux/root/bin/cov-analyze --worker --message-size-limit 104857600
+dm-access-lib: DM started: dm_pid=24632
+dm-access-lib: AM got connection from DM: (local) 127.0.0.1:34829 - 127.0.0.1:41986 (remote)
+makeWUP: ENABLE_ONLY0
+makeWUP: stat0
+makeWUP: stat1
+makeWUP: stat2
+wurlegend: <phase><n> dw_id wup_bytes dw_ms wur_bytes aw_ms [mem] paths (rest are labeled)
+wur: stat0 1 14157 566 357 5 mem=37683200 max=99860480 20 nr=20 n: batch 0
+wur: stat1 1 14034 6 351 4 20 nr=20 n: batch 1
+wur: stat2 1 10695 6 272 4 16 nr=16 n: batch 2
+makeWUP: stat3
+makeWUP: gen0
+makeWUP: gen2
+makeWUP: gen6
+makeWUP: gen14
+makeWUP: gen30
+makeWUP: gen55
+makeWUP: gen54
+makeWUP: gen53
+makeWUP: gen52
+makeWUP: gen51
+makeWUP: gen50
+makeWUP: gen49
+makeWUP: gen48
+makeWUP: gen47
+makeWUP: gen46
+makeWUP: gen45
+wur: gen0 1 3962 176 334 174 7 n: test_anubis_setup in TU 1
+makeWUP: gen44
+wur: gen2 1 3967 15 334 15 7 n: test_camellia_setup in TU 1
+makeWUP: gen43
+makeWUP: gen42
+wur: gen6 1 4167 16 332 14 7 n: test_cfb_start in TU 1
+makeWUP: gen41
+wur: gen30 1 4490 21 348 19 7 n: test_ocb_encrypt_authenticate_memory in TU 1
+makeWUP: gen40
+wur: gen52 1 3666 13 537 11 4 n: test_xcbc_init in TU 1
+makeWUP: gen39
+wur: gen46 1 3974 16 340 14 7 n: test_safer_sk128_setup in TU 1
+makeWUP: gen38
+wur: gen45 1 3924 12 91 10 4 n: test_rijndael_setup in TU 1
+makeWUP: gen37
+wur: gen43 1 3957 14 332 11 7 n: test_rc5_setup in TU 1
+makeWUP: gen36
+makeWUP: gen35
+wur: gen42 1 3957 17 331 17 7 n: test_rc2_setup in TU 1
+makeWUP: gen34
+wur: gen41 1 4173 13 335 13 7 n: test_pmac_memory in TU 1
+makeWUP: gen33
+wur: gen40 1 3666 12 537 8 4 n: test_pmac_init in TU 1
+makeWUP: gen32
+wur: gen39 1 4009 16 333 9 7 n: test_pmac_file in TU 1
+makeWUP: gen29
+wur: gen38 1 4309 17 336 15 7 n: test_pkcs_5_alg2 in TU 1
+makeWUP: gen31
+wur: gen37 1 4092 13 91 12 4 n: test_pkcs_5_alg1 in TU 1
+makeWUP: gen28
+wur: gen36 1 3588 12 538 11 4 n: test_pelican_init in TU 1
+makeWUP: gen27
+makeWUP: gen26
+wur: gen35 1 4173 18 335 16 7 n: test_omac_memory in TU 1
+makeWUP: gen25
+wur: gen34 1 3666 14 536 13 4 n: test_omac_init in TU 1
+makeWUP: gen24
+wur: gen32 1 4167 18 333 18 7 n: test_ofb_start in TU 1
+makeWUP: gen23
+wur: gen33 1 4009 15 332 15 7 n: test_omac_file in TU 1
+makeWUP: gen22
+makeWUP: gen21
+wur: gen29 1 4623 23 345 20 7 n: test_ocb_decrypt_verify_memory in TU 1
+makeWUP: gen20
+wur: gen28 1 3964 14 334 12 7 n: test_noekeon_setup in TU 1
+makeWUP: gen19
+wur: gen27 1 3962 14 335 14 7 n: test_multi2_setup in TU 1
+makeWUP: gen18
+makeWUP: gen17
+wur: gen26 1 4501 34 486 32 10 n: test_lrw_start in TU 1
+makeWUP: gen16
+wur: gen25 1 3960 14 332 14 7 n: test_kseed_setup in TU 1
+makeWUP: gen13
+wur: gen24 1 3962 15 335 13 7 n: test_khazad_setup in TU 1
+makeWUP: gen15
+wur: gen22 1 3958 16 332 15 7 n: test_idea_setup in TU 1
+makeWUP: gen12
+makeWUP: gen11
+wur: gen21 1 4173 18 335 15 7 n: test_hmac_memory in TU 1
+makeWUP: gen10
+wur: gen20 1 3666 16 537 13 4 n: test_hmac_init in TU 1
+makeWUP: gen9
+wur: gen18 1 3905 15 330 13 7 n: test_gcm_init in TU 1
+makeWUP: gen8
+wur: gen17 1 4162 20 334 17 7 n: test_f9_memory in TU 1
+makeWUP: gen5
+wur: gen16 1 3658 13 538 10 4 n: test_f9_init in TU 1
+makeWUP: gen7
+wur: gen15 1 4003 13 332 10 7 n: test_f9_file in TU 1
+makeWUP: gen4
+makeWUP: gen1
+wur: gen12 1 4428 23 331 19 7 n: test_eax_init in TU 1
+makeWUP: gen3
+wur: gen11 1 4915 21 348 21 7 n: test_eax_encrypt_authenticate_memory in TU 1
+wur: gen10 1 5053 11 345 10 7 n: test_eax_decrypt_verify_memory in TU 1
+wur: gen9 1 3957 9 330 7 7 n: test_des_setup in TU 1
+wur: gen8 1 3958 6 333 5 7 n: test_des3_setup in TU 1
+wur: gen5 1 4291 10 331 8 7 n: test_ccm_init in TU 1
+wur: gen4 1 4167 8 332 7 7 n: test_cbc_start in TU 1
+wur: gen3 1 3960 8 333 6 7 n: test_cast5_setup in TU 1
+wur: gen1 1 3967 8 335 8 7 n: test_blowfish_setup in TU 1
+wur: gen7 1 4293 9 332 7 7 n: test_ctr_start in TU 1
+wur: gen13 1 4041 7 331 7 7 n: test_ecb_start in TU 1
+wur: gen19 1 4005 8 333 7 7 n: test_hmac_file in TU 1
+wur: gen31 1 4037 9 331 7 7 n: test_ocb_init in TU 1
+wur: gen23 1 3962 7 334 7 7 n: test_kasumi_setup in TU 1
+wur: gen44 1 3957 7 332 7 7 n: test_rc6_setup in TU 1
+wur: gen47 1 3973 8 338 8 7 n: test_safer_sk64_setup in TU 1
+wur: gen48 1 3964 10 334 10 7 n: test_serpent_setup in TU 1
+wur: gen49 1 3967 9 335 9 7 n: test_skipjack_setup in TU 1
+wur: gen50 1 3964 8 336 8 7 n: test_twofish_setup in TU 1
+wur: gen53 1 4173 8 336 7 7 n: test_xcbc_memory in TU 1
+wur: gen51 1 4010 8 333 8 7 n: test_xcbc_file in TU 1
+wur: gen54 1 3958 8 332 6 7 n: test_xtea_setup in TU 1
+wur: gen14 1 4410 9 488 9 7 n: test_f8_start in TU 1
+wur: gen55 1 4373 9 486 7 7 n: test_xts_start in TU 1
+makeWUP: gen56
+makeWUP: dataflowB2_0
+makeWUP: dataflowB2_1
+makeWUP: dataflowB2_5
+makeWUP: dataflowB2_13
+makeWUP: dataflowB2_29
+makeWUP: dataflowB2_55
+makeWUP: dataflowB2_54
+makeWUP: dataflowB2_53
+wur: dataflowB2_0 1 1629 24 566 23 3 n: test_anubis_setup in TU 1
+makeWUP: dataflowB2_52
+wur: dataflowB2_1 1 1634 3 568 0 3 n: test_blowfish_setup in TU 1
+wur: dataflowB2_5 1 1802 3 564 0 3 n: test_ccm_init in TU 1
+wur: dataflowB2_29 1 2046 2 428 0 3 n: test_ocb_decrypt_verify_memory in TU 1
+wur: dataflowB2_53 1 1754 3 420 0 3 n: test_xcbc_memory in TU 1
+makeWUP: dataflowB2_51
+wur: dataflowB2_54 1 1625 3 565 0 3 n: test_xtea_setup in TU 1
+wur: dataflowB2_13 1 1668 2 563 2 3 n: test_ecb_start in TU 1
+makeWUP: dataflowB2_50
+wur: dataflowB2_55 1 2025 4 549 0 3 n: test_xts_start in TU 1
+wur: dataflowB2_52 1 1469 2 410 2 3 n: test_xcbc_init in TU 1
+makeWUP: dataflowB2_49
+wur: dataflowB2_51 1 1649 2 413 0 3 n: test_xcbc_file in TU 1
+wur: dataflowB2_50 1 1631 2 566 2 3 n: test_twofish_setup in TU 1
+makeWUP: dataflowB2_48
+wur: dataflowB2_49 1 1634 2 569 2 3 n: test_skipjack_setup in TU 1
+wur: dataflowB2_48 1 1631 2 565 2 3 n: test_serpent_setup in TU 1
+makeWUP: dataflowB2_47
+wur: dataflowB2_47 1 1640 0 571 0 3 n: test_safer_sk64_setup in TU 1
+makeWUP: dataflowB2_46
+wur: dataflowB2_46 1 1641 0 572 0 3 n: test_safer_sk128_setup in TU 1
+makeWUP: dataflowB2_45
+wur: dataflowB2_45 1 1591 0 492 0 2 n: test_rijndael_setup in TU 1
+makeWUP: dataflowB2_44
+wur: dataflowB2_44 1 1624 0 566 0 3 n: test_rc6_setup in TU 1
+makeWUP: dataflowB2_43
+wur: dataflowB2_43 1 1624 0 566 0 3 n: test_rc5_setup in TU 1
+makeWUP: dataflowB2_42
+wur: dataflowB2_42 1 1624 0 565 0 mem=37883904 max=101240832 3 n: test_rc2_setup in TU 1
+makeWUP: dataflowB2_41
+wur: dataflowB2_41 1 1754 0 416 0 3 n: test_pmac_memory in TU 1
+makeWUP: dataflowB2_40
+wur: dataflowB2_40 1 1469 0 409 0 3 n: test_pmac_init in TU 1
+makeWUP: dataflowB2_39
+wur: dataflowB2_39 1 1648 0 411 0 3 n: test_pmac_file in TU 1
+makeWUP: dataflowB2_38
+wur: dataflowB2_38 1 1850 0 397 0 3 n: test_pkcs_5_alg2 in TU 1
+makeWUP: dataflowB2_37
+wur: dataflowB2_37 1 1691 0 344 0 2 n: test_pkcs_5_alg1 in TU 1
+makeWUP: dataflowB2_36
+wur: dataflowB2_36 1 1431 0 407 0 3 n: test_pelican_init in TU 1
+makeWUP: dataflowB2_35
+wur: dataflowB2_35 1 1754 0 418 0 3 n: test_omac_memory in TU 1
+makeWUP: dataflowB2_34
+wur: dataflowB2_34 1 1469 1 409 0 3 n: test_omac_init in TU 1
+makeWUP: dataflowB2_33
+wur: dataflowB2_33 1 1648 2 411 2 3 n: test_omac_file in TU 1
+makeWUP: dataflowB2_32
+wur: dataflowB2_32 1 1754 0 565 0 3 n: test_ofb_start in TU 1
+makeWUP: dataflowB2_31
+wur: dataflowB2_31 1 1682 0 564 0 3 n: test_ocb_init in TU 1
+makeWUP: dataflowB2_28
+wur: dataflowB2_28 1 1631 0 566 0 3 n: test_noekeon_setup in TU 1
+makeWUP: dataflowB2_12
+wur: dataflowB2_12 1 1917 0 564 0 3 n: test_eax_init in TU 1
+makeWUP: dataflowB2_26
+wur: dataflowB2_26 1 2113 0 636 0 4 n: test_lrw_start in TU 1
+makeWUP: dataflowB2_27
+wur: dataflowB2_27 1 1629 0 567 0 3 n: test_multi2_setup in TU 1
+makeWUP: dataflowB2_25
+wur: dataflowB2_25 1 1627 0 564 0 3 n: test_kseed_setup in TU 1
+makeWUP: dataflowB2_24
+wur: dataflowB2_24 1 1629 1 567 1 3 n: test_khazad_setup in TU 1
+makeWUP: dataflowB2_23
+wur: dataflowB2_23 1 1629 1 567 1 3 n: test_kasumi_setup in TU 1
+makeWUP: dataflowB2_22
+wur: dataflowB2_22 1 1625 0 564 0 3 n: test_idea_setup in TU 1
+makeWUP: dataflowB2_21
+wur: dataflowB2_21 1 1754 0 417 0 3 n: test_hmac_memory in TU 1
+makeWUP: dataflowB2_20
+wur: dataflowB2_20 1 1469 0 409 0 3 n: test_hmac_init in TU 1
+makeWUP: dataflowB2_19
+wur: dataflowB2_19 1 1644 3 411 0 3 n: test_hmac_file in TU 1
+makeWUP: dataflowB2_18
+wur: dataflowB2_18 1 1590 0 563 0 3 n: test_gcm_init in TU 1
+makeWUP: dataflowB2_17
+wur: dataflowB2_17 1 1743 2 415 2 3 n: test_f9_memory in TU 1
+makeWUP: dataflowB2_16
+wur: dataflowB2_16 1 1461 1 408 0 3 n: test_f9_init in TU 1
+makeWUP: dataflowB2_15
+wur: dataflowB2_15 1 1642 0 412 0 3 n: test_f9_file in TU 1
+makeWUP: dataflowB2_30
+wur: dataflowB2_30 1 1953 0 430 0 3 n: test_ocb_encrypt_authenticate_memory in TU 1
+makeWUP: dataflowB2_4
+wur: dataflowB2_4 1 1754 0 565 0 3 n: test_cbc_start in TU 1
+makeWUP: dataflowB2_10
+wur: dataflowB2_10 1 2320 0 428 0 3 n: test_eax_decrypt_verify_memory in TU 1
+makeWUP: dataflowB2_11
+wur: dataflowB2_11 1 2222 0 431 0 3 n: test_eax_encrypt_authenticate_memory in TU 1
+makeWUP: dataflowB2_9
+wur: dataflowB2_9 1 1624 0 564 0 3 n: test_des_setup in TU 1
+makeWUP: dataflowB2_8
+wur: dataflowB2_8 1 1625 0 565 0 3 n: test_des3_setup in TU 1
+makeWUP: dataflowB2_7
+wur: dataflowB2_7 1 1822 0 562 0 3 n: test_ctr_start in TU 1
+makeWUP: dataflowB2_14
+wur: dataflowB2_14 1 2012 2 417 2 3 n: test_f8_start in TU 1
+makeWUP: dataflowB2_2
+wur: dataflowB2_2 1 1634 0 568 0 3 n: test_camellia_setup in TU 1
+makeWUP: dataflowB2_6
+wur: dataflowB2_6 1 1754 0 565 0 3 n: test_cfb_start in TU 1
+makeWUP: dataflowB2_3
+wur: dataflowB2_3 1 1627 0 566 0 3 n: test_cast5_setup in TU 1
+makeWUP: PER_TU0
+makeWUP: dataflowB2_56
+makeWUP: dataflowA2_0
+local: singleton DATAFLOW_ANALYSIS2 phase
+analyze_dataflow2_stat: resident set kbytes (pre DATAFLOW_ANALYSIS2 phase): 75536K
+analyze_dataflow2_stat: peak resident set kbytes (pre DATAFLOW_ANALYSIS2 phase): 77964K
+analyze_dataflow2_stat: virtual memory kbytes (pre DATAFLOW_ANALYSIS2 phase): 96596K
+analyze_dataflow2_stat: peak virtual memory kbytes (pre DATAFLOW_ANALYSIS2 phase): 102636K
+webforms_dom: 0 Control Render roots
+deep-write: Performing deep writes = 0
+deep-write: Number of field/property writes = 0
+taint: sink reachability: seeded with 0 nodes
+taint: sink reachability: visited 0 nodes
+taint: taint reachability: seeded with 0 nodes
+taint: taint reachability: visited 0 nodes
+graph: Phase overhead for graph adjacency sets: 0KB <invalid>% active
+happens-before: Starting computation
+happens-before: Num topo sorts: 0
+happens-before: Max ctrl-flow nodes per fn: 0
+happens-before: Max unrolled nodes per fn: 0
+happens-before: Num unrolled nodes: 0
+happens-before: Max unrolling ratio: 0
+happens-before: Num explicit entry points: 0
+happens-before: Num other starting points: 0
+analyze_dataflow2_stat: resident set kbytes (post DATAFLOW_ANALYSIS2 phase): 75716K
+analyze_dataflow2_stat: peak resident set kbytes (post DATAFLOW_ANALYSIS2 phase): 77964K
+analyze_dataflow2_stat: virtual memory kbytes (post DATAFLOW_ANALYSIS2 phase): 96596K
+analyze_dataflow2_stat: peak virtual memory kbytes (post DATAFLOW_ANALYSIS2 phase): 102636K
+makeWUP: dataflow_checkers0
+wul: dataflow_checkers0 wu_sz=516 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=517 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=517 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=516 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=567 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=527 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=567 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=568 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=516 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=517 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=822 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=752 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=629 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=521 2 n: batch 0
+wul: dataflow_checkers0 wu_sz=645 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=566 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=487 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=596 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=516 0 n: batch 0
+wul: dataflow_checkers0 wu_sz=564 0 n: batch 0
+makeWUP: dataflow_checkers1
+wul: dataflow_checkers1 wu_sz=489 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=603 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=516 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=516 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=516 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=516 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=654 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=516 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=516 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=722 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=657 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=568 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=567 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=568 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=489 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=603 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=482 2 n: batch 1
+wul: dataflow_checkers1 wu_sz=570 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=659 0 n: batch 1
+wul: dataflow_checkers1 wu_sz=568 0 n: batch 1
+makeWUP: dataflow_checkers2
+wul: dataflow_checkers2 wu_sz=489 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=603 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=517 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=517 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=517 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=477 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=518 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=519 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=516 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=517 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=516 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=569 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=489 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=603 1 n: batch 2
+wul: dataflow_checkers2 wu_sz=516 0 n: batch 2
+wul: dataflow_checkers2 wu_sz=606 0 n: batch 2
+makeWUP: PER_TU1
+makeWUP: dataflow_checkers3
+summary: Analysis summary report:
+summary: ------------------------
+summary: Files analyzed                 : 1
+summary: Total LoC input to cov-analyze : 546
+summary: Functions analyzed             : 56
+summary: Paths analyzed                 : 371
+summary: Time taken by analysis         : 00:00:03
+summary: Defect occurrences found       : 57 HARDCODED_CREDENTIALS
+summary: Number of functions: 56
+summary: out_of_memory count: 0
+summary: paths_exceeded count: 0
+summary: recoverable failures: 0
+mem: AM peak mem bytes: 105099264
+assert: suppressed asserts: workers=0, master=0
+failures: recoverable failures: workers=0, master=0

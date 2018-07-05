@@ -1,0 +1,9 @@
+/home/ubuntu/prevent/objs/linux/root/bin/cov-analyze --dir /home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/dir/dir --disable-deduplication --disable-fb --sanity-checks --xx-reject-unexpected-minified-js --ticker-mode=none --allow-unsupported-checkers --no-incremental --export-summaries false --skip-metrics -en HARDCODED_CREDENTIALS 
+Analysis summary report:
+------------------------
+Files analyzed                 : 1
+Total LoC input to cov-analyze : 546
+Functions analyzed             : 56
+Paths analyzed                 : 371
+Time taken by analysis         : 00:00:03
+Defect occurrences found       : 57 HARDCODED_CREDENTIALS

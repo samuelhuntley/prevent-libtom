@@ -1,0 +1,18 @@
+## Need to add them to test-models.c file 
+
+## Does not catch defect in these which we need to resolve
+
+ret = lrw_start(1, IV1, pass, pass_len, tweak1, 0, lrw1);//#nodefect#HARDCODED_CREDENTIALS //#defect#HARDCODED_CREDENTIALS
+
+ret = xts_start(1, key_1, key_2, key1_len, 0, lrw1);//#nodefect#HARDCODED_CREDENTIALS //#defect#HARDCODED_CREDENTIALS
+
+ret = f8_start(1, IV1, key_1, key1_len, tweak2, key2_len, 0, lrw1);//#defect#HARDCODED_CREDENTIALS
+
+ret = f8_start(1, IV1, key_1, key1_len, key_2, key2_len, 0, lrw1);//#nodefect#HARDCODED_CREDENTIALS //#defect#HARDCODED_CREDENTIALS
+
+
+## Over run  warnings with lrw1 = ""
+
+ret = lrw_start(1, IV1, pass, pass_len, tweak2, 0, lrw1);//#defect#HARDCODED_CREDENTIALS
+
+ret = xts_start(1, key_1, tweak2, key1_len, 0, lrw1);//#defect#HARDCODED_CREDENTIALS

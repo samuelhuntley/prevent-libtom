@@ -1,0 +1,22 @@
+<test_log>
+<id>checker:</id>
+<wallclock_ms>14</wallclock_ms>
+<start_unix_time>-0.001</start_unix_time>
+<group>3r8t4</group>
+<cpu_ms>13</cpu_ms>
+<status>FAILURE</status>
+<pwd>analysis/prevent-models/models/c/libtomcrypt/test-models</pwd>
+<config>{
+USE_DEFAULTS=true;
+}</config>
+<log>Compiling source files.
+/home/ubuntu/prevent/objs/linux/root/bin/cov-translate --fail-stop --add-arg --no_error_recovery --no-preprocess-first --dir /tmp/cov-ubuntu/7c37adde132b830c5099f5fc60359906/run-testsuite/a6e699798ff849755f221f21966f1351/dir /home/ubuntu/prevent/linux-packages/bin/gcc -I /home/ubuntu/prevent/linux-packages/include -c test-libtomcrypt_crypto_api.c
+[WARNING] No cit_version tag found. Assuming version 1.
+cov-translate.cpp:577:translate_and_emit: [ERROR] No compiler settings found for /home/ubuntu/prevent/linux-packages/bin/gcc
+/home/ubuntu/prevent/objs/linux/root/bin/cov-translate failed with code 2
+</log>
+<failure_log>[WARNING] No cit_version tag found. Assuming version 1.
+cov-translate.cpp:577:translate_and_emit: [ERROR] No compiler settings found for /home/ubuntu/prevent/linux-packages/bin/gcc
+/home/ubuntu/prevent/objs/linux/root/bin/cov-translate failed with code 2
+</failure_log>
+</test_log>

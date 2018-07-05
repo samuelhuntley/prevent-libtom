@@ -1,0 +1,41 @@
+/* Copyright (c) 2018 Synopsys, Inc. All rights reserved worldwide. */
+/*{
+  ANALYSIS_OPTS+=["-en";"HARDCODED_CREDENTIALS"];
+}*/
+
+
+typedef void symmetric_LRW;
+int lrw1_start(int cipher, const unsigned char *IV, const unsigned char *key, int keylen, const unsigned char *tweak, int num_rounds, symmetric_LRW *lrw)
+{
+
+	int ret_code =1;
+	
+
+	/* 3. data contains sensitive credentials and should not be hardcoded */
+	__coverity_hardcoded_credential_crypto_sink__(key);
+	
+	/* 4. data contains sensitive credentials and should not be hardcoded */
+	__coverity_hardcoded_credential_crypto_sink__(tweak);
+
+
+	return ret_code;
+}
+
+void test_lrw_start(char *passw,char *tweak2) {
+
+		char pass[] = "Hardcoded";	
+		char IV1[] = "dsssdsdsddsdsd";	
+		char tweak1[] = "ssdsdsdsdkey";
+		symmetric_LRW *lrw1 = "sdsdsdsdsdsdsdsdsdsdsdsdsdsdsddsdsdsdsdsdsd";		
+		unsigned long pass_len = sizeof(pass);
+		int ret = 1;
+
+		
+		
+	
+
+		ret = lrw1_start(1, IV1, pass, pass_len, tweak2, 0, lrw1); //#defect#HARDCODED_CREDENTIALS //#fndefect#HARDCODED_CREDENTIALS
+		
+		
+
+}

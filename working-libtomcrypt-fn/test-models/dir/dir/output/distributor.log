@@ -1,0 +1,30 @@
+1530808539.675: DM started: dm_pid=24632
+1530808539.675: DM command line: /home/ubuntu/prevent/objs/linux/root/bin/cov-internal-dm --AM-port 34829 --log-file /home/ubuntu/prevent/analysis/prevent-models/models/c/libtomcrypt/test-models/dir/dir/output/distributor.log -j 1 --AW-timeout 600 /home/ubuntu/prevent/objs/linux/root/bin/cov-analyze --worker --message-size-limit 104857600
+1530808539.675: Connecting to AM at 127.0.0.1:34829
+1530808539.675: Connected to AM: (local) 127.0.0.1:41986 - 127.0.0.1:34829 (remote)
+1530808539.675: Listening for DWs at 127.0.0.1:37667
+1530808539.675: Starting DW 1 with command line: /home/ubuntu/prevent/objs/linux/root/bin/cov-internal-dw --DM-port 37667 --DW-id 1
+1530808539.675: DW 1 started: dw_pid=24634
+1530808539.685: DW 1 log: 1530808539.685: Connecting to DM on 127.0.0.1:37667
+1530808539.685: Received a connection from a DW: 127.0.0.1:57270
+1530808539.685: DW 1 log: 1530808539.685: Connected to the DM: (local) 127.0.0.1:57270 - 127.0.0.1:37667 (remote)
+1530808539.685: DW 1 log: 1530808539.685: Sending DWDM_INIT: dw_id=1, benchmark=0
+1530808539.685: Received DWDM_INIT: dw_id=1, benchmark=0
+1530808539.685: Stopping to listen for new DWs
+1530808539.685: Sending DMDW_INIT to DW 1: aw_command_line=["/home/ubuntu/prevent/objs/linux/root/bin/cov-analyze","--worker","--message-size-limit","104857600"], aw_image=(empty), awFaults=[], awTimeoutSeconds=600
+1530808539.685: DW 1 log: 1530808539.685: Received DMDW_INIT: aw_command_line=["/home/ubuntu/prevent/objs/linux/root/bin/cov-analyze","--worker","--message-size-limit","104857600"], aw_image=(empty), awFaults=[], awTimeoutSeconds=600
+1530808539.685: DW 1 log: 1530808539.685: Started listening for AW at 127.0.0.1:42765
+1530808539.685: DW 1 log: 1530808539.685: Starting AW with command line (COVERITY_DW_PORT=42765): /home/ubuntu/prevent/objs/linux/root/bin/cov-analyze --worker --message-size-limit 104857600
+1530808539.685: DW 1 log: 1530808539.685: AW started: aw_pid=24636
+1530808539.696: DW 1 log: 1530808539.696: DW 1 received connection from AW: (local) 127.0.0.1:42765 - 127.0.0.1:42320 (remote)
+1530808541.403: AM closed the connection, DM shutting down
+1530808541.403: Disconnecting DW 1
+1530808541.407: DW 1 log: 1530808541.403: DW 1: the DM closed the connection, DW shutting down
+1530808541.407: DW 1 log: 1530808541.403: DW 1 summary: aw_starts=1, wurs_sent=115, total_awms=872, total_dwms=1546
+1530808541.407: DW 1 log: 1530808541.403: Disconnecting AW
+1530808541.410: DW 1 log: 1530808541.410: AW exited with code 0
+1530808541.410: DW 1 log: AW peak mem bytes: 101240832
+1530808541.410: DW 1 exited with code 0
+1530808541.410: dm-summary: elapsed_time_ms=1735, am_to_dm_wus=115, dm_to_am_wurs=115
+1530808541.410: dw-summary: dw_id=1, state=inactive, wus_outstanding=0, wus_sent=115, wurs_received=115, active_ms=1610, idle_ms=101
+1530808541.410: DM exiting with code 0
